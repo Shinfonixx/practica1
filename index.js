@@ -18,7 +18,7 @@ app.get('/', async (_req, res) => {
 app.get('/crear', async (_req, res) => {
   console.log('Agregando nuevo videojuego...')
   await Videojuego.create({ titulo: 'Valorant', genero: 'Shooter' }) //crea un videojuego con título y género, y luego nos devuelve un OK
-  return res.send('ok')
+  return res.send('El juego es Valorant')
 })
 
 app.listen(3000, () => console.log('Escuchando en el puerto 3000...')) //dejamos que se quede escuchando en el puerto 3000 y dejamos el consolelog para verificar que está corriendo la aplicacion
