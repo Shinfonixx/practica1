@@ -17,7 +17,7 @@ app.get('/', async (_req, res) => {
 })
 app.get('/crear', async (_req, res) => {
   console.log('Agregando nuevo videojuego...')
-  await Videojuego.create({ titulo: 'The Legend of Zelda', genero: 'Aventura' }) //crea un videojuego con título y género, y luego nos devuelve un OK
+  await Videojuego.create({ titulo: 'Valorant', genero: 'Shooter' }) //crea un videojuego con título y género, y luego nos devuelve un OK
   return res.send('ok')
 })
 
